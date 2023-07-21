@@ -1640,6 +1640,40 @@ ul {
             justify-content: space-between;
         }
 
+        .mob-menu.is-open {
+            transform: translateX(0);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
