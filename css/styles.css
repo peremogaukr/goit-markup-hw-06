@@ -1576,15 +1576,31 @@ ul {
         }
         
         .mob-menu {
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            background-color: #FFF;
-            top: 0;
-            z-index: 2;
-            padding-top: 24px;
-            padding-right: 24px;
-            display: none;
+                position: fixed;
+                z-index: 100;
+                width: 100vw;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                background-color: #FFFFFF;
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                overflow: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 80px 24px 40px 40px;
+                transform: translateX(100%);
+                transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .mob-menu.is-open {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                transform: translateX(0);
         }
 
         .address {
@@ -1623,13 +1639,21 @@ ul {
             color: #2e2f42;
         }
 
-        .menu-svg {
+        .menu-svg-vector {
             stroke: #2e2f42;
             width: 32px;
-            height: 22px;
+                height: 22px;
             flex-shrink: 0;
-            
         }
+
+                .menu-svg {
+                    stroke: #2e2f42;
+                width: 32px;
+                    height: 22px;
+                    width: 8px;
+                        height: 8px;
+                    flex-shrink: 0;
+                }
 
         .open-menu-btn {
             border: transparent;
@@ -1640,15 +1664,49 @@ ul {
             justify-content: space-between;
         }
 
-        .mob-menu.is-open {
-            transform: translateX(0);
+        
+        .svg-window {
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
+                 .close-menu-btn {
+                     position: absolute;
+                     top: 24px;
+                     right: 24px;
+width: 24px;
+    height: 24px;
+                     border-radius: 50%;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     background-color: #e7e9fc;
+                     border: 1px solid rgba(0, 0, 0, 0.1);
+                     padding: 0;
+                     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                     cursor: pointer;
+                 }
 
+                 .mob-header-studio {
+                    margin-bottom: 40px;
+                 }
+        
+                .mob-mail-tel-list {
+                    color: #4D5AE5;
+                        font-size: 36px;
+                        font-weight: 700;
+                        line-height: 1.1;
+                        letter-spacing: 0.72px;
+                        text-transform: capitalize;
+                }
 
-
-
-
+                .mail {
+                    color: var(--slate, #434455);
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 120%;
+                        letter-spacing: 0.4px;
+                }
 
 
 
