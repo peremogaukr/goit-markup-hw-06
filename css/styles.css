@@ -2071,7 +2071,14 @@ width: 24px;
     }
 }
 
+.ul-class {
+    display: flex;
+    flex-direction: row;
+}
 
+.ul-content {
+    width: calc((100% - 120px) / 4);
+}
 
 }
 
