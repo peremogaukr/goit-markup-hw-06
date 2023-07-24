@@ -1204,6 +1204,17 @@ ul {
         margin-bottom: 72px;
     }
 }
+
+.div-footer-two {
+    margin-bottom: 72px;
+}
+
+.input {
+    margin-bottom: 16px;
+}
+
+
+
 }
     
 
@@ -1437,7 +1448,7 @@ ul {
         letter-spacing: 0.32px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 17.5px;
+        /* margin-top: 17.5px; */
         max-width: 264px;
     }
 
@@ -1483,7 +1494,7 @@ ul {
         border-radius: 4px;
         color: var(--white, #FFF);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        margin-bottom: 16px;
+        
         margin-left: auto;
         margin-right: auto;
     }
@@ -1868,6 +1879,14 @@ width: 24px;
     margin-bottom: 8px;
 }
 
+.not-ul {
+    margin-bottom: 0;
+}
+
+.not-ul-class {
+    margin-bottom: 0;
+}
+
 .label-form-window {
     font-size: 12px;
     font-weight: 400;
@@ -2018,10 +2037,7 @@ width: 24px;
     display: none;
 }
 
-.div-footer-two {
-    margin-bottom: 72px;
-    
-}
+
 
 
 
@@ -2068,8 +2084,25 @@ width: 24px;
 
 
 
+@media screen and (max-width: 768px) {
+   
+.div-footer {
+    width: 564px;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
 .div-footer-two {
-    margin-right: 24px;
+    
     text-align: left;
     
 }
@@ -2114,10 +2147,14 @@ width: 24px;
 }
 
 
+
 .section-five-div {
     min-width: 584px;
 }
 
+.section-five-div {
+    width: 584px;
+}
 
 
          .header-div {
@@ -2211,6 +2248,18 @@ width: 24px;
 .mail-tel-list {
     color: #434455;
     font-style: normal;
+}
+
+.footer-p {
+    color: #F4F4FD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 17.5px; */
+    max-width: 264px;
 }
 
 .address {
@@ -2309,6 +2358,9 @@ width: 24px;
     flex-wrap: wrap;
 }
 
+.div-footer {
+    gap: 72px 24px;
+}
 
 .li-customers {
     width: calc((100% - 48px) / 3);
@@ -2318,8 +2370,10 @@ width: 24px;
 .section-three {
     display: none;
 }
-
-
+/* 
+.div-footer-two {
+    width: 584px;
+} */
 
 
 
@@ -2540,7 +2594,6 @@ and (max-width: 1157.8px) {
 .div-footer-two {
     text-align: left;
     margin-right: 24px;
-    margin-bottom: 72px;
 }
 
 .footer-p-two {
@@ -3358,6 +3411,8 @@ color: var(--slate, #434455);
 .div-footer {
     display: flex;
     align-items: baseline;
+    flex-wrap: nowrap;
+    
 }
 
 .div-footer-two {
@@ -3514,7 +3569,7 @@ color: var(--slate, #434455);
 }
 
 .input {
-    width: 100%;
+    width: 264px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -3640,6 +3695,8 @@ color: var(--slate, #434455);
 .textarea:focus {
     border-color: #4D5AE5;
 }
+
+
 
 .div-checkbox {
     margin-bottom: 24px;
