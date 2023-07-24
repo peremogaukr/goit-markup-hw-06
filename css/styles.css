@@ -1175,8 +1175,23 @@ ul {
         margin: auto;
     }
 
+    .ul-three-content {
+        margin-bottom: 72px;
+    }
+    
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
     .section-two {
         display: inline-flex;
         flex-direction: column;
@@ -1312,7 +1327,7 @@ ul {
     
 
         .li-customers {
-            width: calc((100% - 120px) / 2);
+            width: calc((100% - 16px) / 2);
             height: 88px;
         }
      
@@ -1527,9 +1542,9 @@ ul {
             justify-content: center;
         }
 
-        .list-background:not(:last-child) {
+        /* .list-background:not(:last-child) {
             margin-bottom: 72px;
-        }
+        } */
 
         .section-one {
             background-color: #2e2f42;
@@ -1969,7 +1984,7 @@ width: 24px;
 }
 
 
-
+}
 
 
 
@@ -2029,16 +2044,18 @@ width: 24px;
 }
 
 .ul-three-content {
-    margin-left: 24px;
-    margin-bottom: 64px;
-   
+    /* margin-left: 24px;
+    margin-bottom: 64px; */
+    gap: 24px 64px;
 }
 
 .section-two-title {
     text-align: left;
 }
 
-
+.header-logo {
+    margin-right: 120px;
+}
 
 .members-container {
     display: flex;
@@ -2068,6 +2085,11 @@ width: 24px;
 
 }
 
+.mail-tel-list {
+    color: #434455;
+    font-style: normal;
+}
+
 .address {
     display: block;
 }
@@ -2092,7 +2114,6 @@ width: 24px;
 .section-one {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-tablet1.jpg);
-    height: 432px;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2162,6 +2183,192 @@ width: 24px;
 
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+.container {
+        max-width: 1158px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: auto;
+    }
+
+.header-div {
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.section-two {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.ul-class {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ul-three-content {
+    /* margin-left: 24px;
+    margin-bottom: 64px; */
+    gap: 24px 64px;
+}
+
+.section-two-title {
+    text-align: left;
+}
+
+
+
+.members-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.open-menu-btn {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mail-tel {
+    display: flex;
+    font-style: normal;
+    margin-left: auto;
+
+}
+
+.mail-tel-list {
+    color: #434455;
+    font-style: normal;
+}
+
+.address {
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-studio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-tablet1.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-one-title {
+    margin-bottom: 72px;
+    color: var(--white, #FFF);
+    text-align: left;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section-one {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-tablet2.jpg);
+    }
+}
+
+
+
+.ul-class {
+    display: flex;
+    flex-direction: row;
+    gap: 72px 24px;
+}
+
+.ul-content {
+    width: calc((100% - 120px) / 2);
+
+
+}
+
+.customers-list {
+    display: flex;
+    gap: 16px;
+    column-gap: 24px;
+    row-gap: 72px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.li-customers {
+    width: calc((100% - 48px) / 3);
+    height: 88px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2205,7 +2412,14 @@ width: 24px;
 
 
 
-@media only screen and (min-width: 768px) {
+
+
+
+
+
+
+
+@media only screen and (min-width: 1159px) {
 
 .container {
         max-width: 1280px;
@@ -2310,7 +2524,7 @@ width: 24px;
     padding-top: 188px;
     padding-bottom: 188px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/images/people-office1.jpg);
+            rgba(46, 47, 66, 0.7)), url(../images/images/7e83b6c8ee4603ea892aa8aaebb3c5fe.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
@@ -2338,13 +2552,6 @@ width: 24px;
     background-color: #F4F4FD;
     border-radius: 4px;
     margin-bottom: 8px;
-}
-
-.ul-four {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-    ;
 }
 
 .section-one-button {
@@ -2387,8 +2594,9 @@ width: 24px;
 
 .section-two-p {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
     color: #434455;
 }
 
@@ -2422,7 +2630,9 @@ width: 24px;
 
 
 
-
+.div-footer-two {
+    text-align: left;
+}
 
 
 
@@ -2438,6 +2648,7 @@ width: 24px;
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 16px;
+    text-align: left;
 } 
 
  .span-footer {
@@ -2562,7 +2773,7 @@ width: 24px;
 
 .ul-class-two {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 24px;
 }
 
@@ -2696,6 +2907,7 @@ width: 24px;
     color: #F4F4FD;
     letter-spacing: 0.02em;
     max-width: 264px;
+    text-align: left;
 } 
 
 
@@ -2804,6 +3016,7 @@ width: 24px;
 .ul-class {
     display: flex;
     gap: 24px;
+    flex-wrap: nowrap;
 }
 
 .ul-class-two {
@@ -2897,6 +3110,7 @@ width: 24px;
 .customers-list {
     display: flex;
     gap: 24px;
+    flex-wrap: nowrap;
 }
 
 .li-customers {
@@ -2980,7 +3194,7 @@ width: 24px;
 }
 
 .div-footer-two {
-    margin-right: 80px;
+    margin-right: 120px;
 }
 
 .footer-p-two {
@@ -2990,6 +3204,7 @@ width: 24px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+    text-align: left;
 }
 
 .footer-ul {
@@ -3123,6 +3338,7 @@ width: 24px;
     line-height: 1.5;
     letter-spacing: 0.02em; 
     color: #FFFFFF;
+    text-align: left;
 }
 
 .form {
