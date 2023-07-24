@@ -2010,8 +2010,8 @@ width: 24px;
 
 .header-div {
     display: flex;
-    padding-top: 25.5px;
-    padding-bottom: 25.5px;
+    padding-top: 20.5px;
+    padding-bottom: 20px;
 }
 
 .section-three {
@@ -2068,8 +2068,23 @@ width: 24px;
 
 
 
+.div-footer-two {
+    margin-right: 24px;
+    text-align: left;
+    padding-left: 108px;
+}
 
+.form {
+    display: flex;
+}
 
+.label-form {
+    margin-right: 24px;
+}
+
+.p-form {
+    text-align: left;
+}
 
 @media screen and (min-width: 429px) and (max-width: 768px) {
     .section-one {
@@ -2108,6 +2123,12 @@ width: 24px;
 .navigation {
     display: flex;
     align-items: center;
+}
+
+.div-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .header-div {
@@ -3487,7 +3508,7 @@ color: var(--slate, #434455);
 }
 
 .input {
-    width: 264px;
+    width: 100%;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
