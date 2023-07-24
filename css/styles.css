@@ -2071,7 +2071,7 @@ width: 24px;
 .div-footer-two {
     margin-right: 24px;
     text-align: left;
-    padding-left: 108px;
+    
 }
 
 .form {
@@ -2085,6 +2085,12 @@ width: 24px;
 .p-form {
     text-align: left;
 }
+
+.div-form {
+    align-items: center;
+}
+
+
 
 @media screen and (min-width: 429px) and (max-width: 768px) {
     .section-one {
