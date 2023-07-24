@@ -1175,13 +1175,38 @@ ul {
         margin: auto;
     }
 
+
+
+
+@media screen and (min-width: 320px) and (max-width: 428px) {
+    .section-one {
+        padding: 112px 0 112px 0;
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-mobile1.jpg);
+        background-size: cover;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section-one {
+            background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-mobile2.jpg);
+            background-size: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .ul-content {
+    margin-bottom: 72px;
+    }
+
     .ul-three-content {
         margin-bottom: 72px;
     }
-    
-.ul-content {
-    margin-bottom: 72px;
 }
+}
+    
+
 
 .tel-mob {
     font-size: 25px;
@@ -1487,7 +1512,6 @@ ul {
        
     }
 
-    
     .section-one-title {
         margin-bottom: 72px;
         color: var(--white, #FFF);
@@ -1500,6 +1524,10 @@ ul {
         max-width: 320px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .header-div {
+        justify-content: space-between;
     }
 
     .list-background {
@@ -1556,7 +1584,7 @@ ul {
             background-color: #2e2f42;
                 padding-top: 112px;
                 padding-bottom: 112px;
-                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-mobile1.jpg);
+                /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-mobile1.jpg); */
                 width: 100%;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -1566,7 +1594,7 @@ ul {
         }
         
 
-           @media (min-device-pixel-ratio: 2),
+           /* @media (min-device-pixel-ratio: 2),
            (min-resolution: 192dpi),
            (min-resolution: 2dppx) {
     
@@ -1575,7 +1603,7 @@ ul {
                     url(../images/images/dark-bg-mobile2.jpg);
                }
     
-            }
+            } */
 
         .header-logo {
             display: inline-flex;
@@ -1749,7 +1777,7 @@ width: 24px;
            }
 
             
-        }
+        
 
         .tel-mob-li {
             margin-bottom: 40px;
@@ -1992,7 +2020,7 @@ width: 24px;
 
 .div-footer-two {
     margin-bottom: 72px;
-    margin-right: 24px;
+    
 }
 
 
@@ -2037,6 +2065,39 @@ width: 24px;
         padding-right: 16px;
         margin: auto;
     }
+
+
+
+
+
+
+@media screen and (min-width: 429px) and (max-width: 768px) {
+    .section-one {
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-tablet1.jpg);
+        padding: 112px 0 112px 0;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section-one {
+            background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-tablet2.jpg);
+            background-size: cover;
+        }
+    }
+}
+
+
+.mail-tel-list {
+    margin-bottom: 12px;
+}
+
+
+.section-five-div {
+    min-width: 584px;
+}
+
+
 
          .header-div {
              justify-content: space-between;
@@ -2147,8 +2208,8 @@ width: 24px;
 }
 
 .section-one {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
-    rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-tablet1.jpg);
+    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-tablet1.jpg); */
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2207,7 +2268,7 @@ width: 24px;
 }
 
 .ul-content {
-    width: calc((100% - 120px) / 2);
+    width: calc((100% - 24px) / 2);
     
 
 }
@@ -2257,6 +2318,26 @@ width: 24px;
         padding-right: 16px;
         margin: auto;
     }
+
+
+@media screen and (min-width: 769px) {
+    .section-one {
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/people-office1xx.jpg);
+        padding: 188px 0 188px 0;
+        background-size: cover;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section-one {
+            background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/people-office2xx.jpg);
+            background-size: cover;
+        }
+    }
+}
+
+
 
 .header-div {
     display: flex;
@@ -2367,14 +2448,14 @@ width: 24px;
 
 
 
-@media (min-device-pixel-ratio: 2),
+/* @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .section-one {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-tablet2.jpg);
     }
-}
+} */
 
 
 
@@ -3636,60 +3717,14 @@ color: var(--slate, #434455);
 
 
 
-@media screen and (min-width: 429px) and (max-width: 768px) {
-    .hero {
-        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-tablet1.jpg);
-        padding: 112px 0 112px 0;
-    }
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-tablet2.jpg);
-            background-size: cover;
-        }
-    }
-}
 
 
 
 
 
-@media screen and (min-width: 769px) {
-    .hero {
-        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/people-office1xx.jpg);
-        padding: 188px 0 188px 0;
-        background-size: cover;
-    }
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/people-office2xx.jpg);
-            background-size: cover;
-        }
-    }
-}
 
 
 
 
 
-@media screen and (min-width: 320px) and (max-width: 428px) {
-    .hero {
-        padding: 112px 0 112px 0;
-        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-mobile1.jpg);
-        background-size: cover;
-    }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-mobile2.jpg);
-            background-size: cover;
-        }
-    }
-}
