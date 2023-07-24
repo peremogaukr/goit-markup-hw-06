@@ -1195,7 +1195,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 428px) {
+@media only screen and (max-width: 428px) {
     .ul-content {
     margin-bottom: 72px;
     }
@@ -1452,6 +1452,11 @@ ul {
         max-width: 264px;
     }
 
+    .margin-ziro {
+        margin-bottom: 0;
+        
+    }
+
     .footer-p-two {
         color: #FFFFFF;
         font-size: 16px;
@@ -1482,7 +1487,7 @@ ul {
     }
 
     .input {
-    width: 380px;
+    width: 264px;
         height: 40px;
         border: 1px solid var(--white, #FFF);
         background-color: transparent;
@@ -2168,6 +2173,10 @@ width: 24px;
     align-items: center;
 }
 
+.div-footer-two {
+    gap: 72px 24px;
+}
+
 .div-footer {
     display: flex;
     flex-direction: row;
@@ -2358,9 +2367,7 @@ width: 24px;
     flex-wrap: wrap;
 }
 
-.div-footer {
-    gap: 72px 24px;
-}
+
 
 .li-customers {
     width: calc((100% - 48px) / 3);
@@ -2503,8 +2510,7 @@ width: 24px;
 }
 
 .section-one {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/images/dark-bg-tablet1.jpg);
+    
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3047,6 +3053,11 @@ color: var(--slate, #434455);
      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08); 
+    width: calc((100% - 72px) / 4);
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -3292,6 +3303,7 @@ color: var(--slate, #434455);
      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08); 
+    
 }
 
 
@@ -3416,7 +3428,7 @@ color: var(--slate, #434455);
 }
 
 .div-footer-two {
-    margin-right: 120px;
+    margin-right: 80px;
 }
 
 .footer-p-two {
